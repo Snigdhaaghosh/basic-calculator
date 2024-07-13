@@ -1,0 +1,18 @@
+print("\npress 1 for addition\npress 2 for subtraction\npress 3 for multiplication\npress 4 for division\n")
+a = int(input("enter the first number: "))
+b = int(input("enter the second number: "))
+choice = input("enter choice: ")
+if (choice == '1'):
+    result = a + b
+elif (choice == '2'):
+    result = a - b
+elif (choice == '3'):
+    result = a * b
+elif (choice == '4'):
+    if (b != 0):
+        result = a / b
+    else:
+        result = "division by zero is not allowed"
+else:
+    result = "Invalid Input"
+print("The result is {}".format(result))
